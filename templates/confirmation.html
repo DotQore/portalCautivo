@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Por favor confirme su informacion</h2>
+        <br/>
+        {{ first_name }} {{ last_name }}
+        <br/>
+        {{ email }}
+        <br/>
+        {{ movil }}
+        <br/><br/>
+
+
+        <form method="post" action="/welcome">
+            <input type="submit" value="return" name="return" />
+            <br/><br/>
+        </form>
+
+        <form method="post" action="/welcome">
+            <input type="submit" value="access" name="access" />
+        </form>
+
+
+
+    </div>
+
+{% endblock %}

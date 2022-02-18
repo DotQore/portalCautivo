@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+      <br/><br/>
+
+      <form action="/confirmation" method="POST">
+
+        <div class="form-group">
+          <label for="Name">Nombre:</label>
+          <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="Ingrese su Nombre" name="first_name" value="{{ first_name }}">
+        </div>
+        <br/>
+
+        <div class="form-group">
+          <label for="Surname">Apellido:</label>
+          <input type="text" class="form-control" id="Surname" aria-describedby="emailHelp" placeholder="Ingrese su Apellido" name="last_name" value="{{ last_name }}">
+            <br/>
+        </div>
+        <br/>
+
+        <div class="form-group">
+          <label for="mail">Email:</label>
+          <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ingrese su Email" name="email" value="{{ email }}">
+        </div>
+        <br/>
+
+        <div class="form-group">
+          <label for="movil">Celular:</label>
+          <input type="number" class="form-control" id="movil" aria-describedby="movil" placeholder="Ingrese su numero" name="movil" value="{{ movil }}">
+          <br/>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+        </div>
+        <br/>
+
+        {% if error %}
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{ error }}
+      </div>
+      <br/>
+      {% endif %}
+
+        <button type="submit" class="btn btn-secondary">Submit</button>
+
+      </form>
+    </div>
+
+
+{% endblock %}
