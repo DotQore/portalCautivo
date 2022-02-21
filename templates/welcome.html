@@ -6,6 +6,11 @@
         <h2>Hola {{ first_name }}, Tu acceso a Internet ha sido habilitado</h2>
         <br/><br/>
 
+        <form method="post" action="/welcome">
+            <input type="submit" value="continue" name="continue" />
+            <br/><br/>
+        </form>
+
     </div>
 
 {% endblock %}

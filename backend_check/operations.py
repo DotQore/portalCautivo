@@ -26,7 +26,7 @@ def validate_file():
             new_register.writerow(register)
 
 
-save_info_db("Sammy", "Bastidas", "samy@gatito.com", '0912345678')
+# save_info_db("Sammy", "Bastidas", "samy@gatito.com", '0912345678')
 
 # File Verification
 # df = pd.read_csv(cts.FILENAME)
