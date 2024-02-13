@@ -4,6 +4,6 @@ class Constants:
     LASTNAME = ''
     EMAIL = ''
     MOVIL = ''
-    PATH_DB = '/Users/fernando/PycharmProjects/Web_form_Meraki/database/'
+    PATH_DB = '/'
     FILENAME = PATH_DB + '/clients.csv'
 
